@@ -1,0 +1,17 @@
+@import "./Variables";
+@import "./Animations";
+@import "./Mixins";
+@import "./NavBar";
+@import "./Home";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: $lineargradientgreen;
+}
+html {
+  font-size: 62.5%;
+}
