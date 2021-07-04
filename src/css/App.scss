@@ -3,11 +3,16 @@
 @import "./Mixins";
 @import "./NavBar";
 @import "./Home";
+@import "./About";
+@import "./GeneralPrices";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Varela;
+  scroll-behavior: smooth;
+  color: $font-color;
 }
 body {
   background-image: $lineargradientgreen;

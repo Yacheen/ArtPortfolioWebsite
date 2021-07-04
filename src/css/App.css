@@ -41,10 +41,10 @@
 .nav-bar .nav-bar-content .Home-button .Home-link {
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
+  color: #93d5ec;
   padding: 2rem;
   text-decoration: none;
-  color: #a5c1ca;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-family: Varela;
 }
 
@@ -65,10 +65,10 @@
 .nav-bar .nav-bar-content .navigation-links li .navigation-link {
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
+  color: #93d5ec;
   padding: 2rem;
   text-decoration: none;
-  color: #a5c1ca;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-family: Varela;
 }
 
@@ -84,11 +84,198 @@
   color: white;
 }
 
+.about-wrapper {
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-wrapper .about-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60rem;
+  padding: 3rem;
+  border-radius: 5px;
+  background: #001f19;
+}
+
+.about-wrapper .about-text-container .about-header {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #93d5ec;
+  color: #93d5ec;
+}
+
+.about-wrapper .about-text-container .about-text {
+  line-height: 2.8rem;
+  font-size: 1.5625rem;
+  text-align: center;
+  color: #93d5ec;
+}
+
+.generalprices-wrapper {
+  overflow-x: hidden;
+  max-width: 90%;
+  margin: 5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.generalprices-wrapper .header-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.generalprices-wrapper .header-text-container .header-text {
+  font-size: 4rem;
+}
+
+.generalprices-wrapper .header-text-container .subheader-text {
+  font-size: 2.5rem;
+}
+
+.generalprices-wrapper .pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-height: 200vh;
+}
+
+.generalprices-wrapper .pricing .pricing-type-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.generalprices-wrapper .pricing .pricing-type-one .pricing-image img {
+  max-width: 70%;
+}
+
+.generalprices-wrapper .pricing .pricing-type-one .pricing-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5rem;
+}
+
+.generalprices-wrapper .pricing .pricing-type-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.generalprices-wrapper .pricing .pricing-type-two .pricing-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.generalprices-wrapper .pricing .pricing-type-two .pricing-image img {
+  max-width: 70%;
+}
+
+.generalprices-wrapper .pricing .pricing-type-two .pricing-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5rem;
+}
+
+.generalprices-wrapper .pricing .pricing-type-three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.generalprices-wrapper .pricing .pricing-type-three .pricing-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.generalprices-wrapper .pricing .pricing-type-three .pricing-image img {
+  max-width: 75%;
+}
+
+.generalprices-wrapper .pricing .pricing-type-three .pricing-text {
+  font-size: 2.5rem;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: Varela;
+  scroll-behavior: smooth;
+  color: #93d5ec;
 }
 
 body {

@@ -1,0 +1,73 @@
+.generalprices-wrapper {
+  overflow-x: hidden;
+  max-width: 90%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+
+  .header-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header-text {
+      font-size: $font1;
+    }
+    .subheader-text {
+      font-size: $font2;
+    }
+  }
+  .pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 200vh;
+    .pricing-type-one {
+      display: flex;
+      justify-content: center;
+      .pricing-image {
+        img {
+          max-width: 70%;
+        }
+      }
+      .pricing-text {
+        display: flex;
+        align-items: center;
+        font-size: $font2;
+      }
+    }
+    .pricing-type-two {
+      display: flex;
+      justify-content: center;
+      .pricing-image {
+        display: flex;
+        justify-content: flex-end;
+        img {
+          max-width: 70%;
+        }
+      }
+      .pricing-text {
+        display: flex;
+        align-items: center;
+        font-size: $font2;
+      }
+    }
+    .pricing-type-three {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .pricing-image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+        img {
+          max-width: 75%;
+        }
+      }
+      .pricing-text {
+        font-size: $font2;
+      }
+    }
+  }
+}

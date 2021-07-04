@@ -1,54 +1,19 @@
 //colors
 //green palette
 $primary-green: #000b09;
-//primary shades
-$primary-green1: #002921;
-$primary-green2: #003d32;
-$primary-green3: #005243;
-$primary-green4: #006653;
-$primary-green5: #007a64;
-$primary-green6: #008f75;
-$primary-green7: #00a385;
-$primary-green8: #00b896;
-$primary-green9: #00cca7;
-$primary-green10: #00e0b7;
-
 $secondary-green: #3c5c67;
-//secondary shades
-$secondary-green1: #446874;
-$secondary-green2: #4b7381;
-$secondary-green3: #537f8d;
-$secondary-green4: #5b8a9a;
-$secondary-green5: #6595a4;
-$secondary-green6: #729dac;
-$secondary-green7: #7ea6b4;
-$secondary-green8: #8bafbb;
-$secondary-green9: #98b8c3;
-$secondary-green10: #a5c1ca;
-
-$lineargradientgreen: linear-gradient(75deg, #000b09, #031b1a);
 
 //blue palette
 $primary-blue: #a4b8d2;
-$primary-blue1: #28427b;
-$primary-blue2: #2d4b8b;
-$primary-blue3: #32539a;
-$primary-blue4: #375ba9;
-$primary-blue5: #3c64b9;
-$primary-blue6: #466ec3;
-$primary-blue7: #567ac8;
-$primary-blue8: #6586cd;
-$primary-blue9: #7492d2;
-$primary-blue10: #849ed7;
-
 $secondary-blue: #d7c294; //keep in mind that this secondary blue is cream/beige
-//secondary shades
-$secondary-blue1: #dcca93;
-$secondary-blue2: #e1d1a3;
-$secondary-blue3: #e6d9b2;
-$secondary-blue4: #ebe1c1;
-$secondary-blue5: #f0e8d1;
 
+//green shades
+$NavBar-background: #0b2e2d;
+$font-color: #93d5ec;
+$font-background: #001f19;
+$lineargradientgreen: linear-gradient(75deg, #000b09, #031b1a);
+
+//blue shades
 $lineargradientblue: linear-gradient(285deg, #a4b8d2, #d7c284);
 
 //fonts
@@ -56,3 +21,7 @@ $lineargradientblue: linear-gradient(285deg, #a4b8d2, #d7c284);
   font-family: Varela;
   src: url("./fonts/VarelaRound-Regular.ttf");
 }
+$font1: 4rem;
+$font2: 2.5rem;
+$font3: 1.5625rem;
+$font4: 0.977rem;

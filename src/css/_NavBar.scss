@@ -1,7 +1,7 @@
 @import "./Variables";
 
 .nav-bar {
-  background: #0b2e2d;
+  background: $NavBar-background;
   .nav-bar-content {
     position: relative;
     overflow: hidden;
@@ -20,10 +20,10 @@
         &:hover {
           background: #113635;
         }
+        color: $font-color;
         padding: 2rem;
         text-decoration: none;
-        color: $secondary-green10;
-        font-size: 2.2rem;
+        font-size: $font2;
         font-family: Varela;
       }
     }
@@ -38,10 +38,10 @@
           &:hover {
             background: #113635;
           }
+          color: $font-color;
           padding: 2rem;
           text-decoration: none;
-          color: $secondary-green10;
-          font-size: 2.2rem;
+          font-size: $font2;
           font-family: Varela;
         }
       }
