@@ -134,7 +134,9 @@
 .generalprices-wrapper {
   overflow-x: hidden;
   max-width: 90%;
-  margin: 5rem auto;
+  background: #001f19;
+  padding: 5rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,6 +190,10 @@
           justify-content: center;
 }
 
+.generalprices-wrapper .pricing .pricing-type-one .pricing-image {
+  max-width: 60%;
+}
+
 .generalprices-wrapper .pricing .pricing-type-one .pricing-image img {
   max-width: 70%;
 }
@@ -196,9 +202,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 4rem;
   font-size: 2.5rem;
 }
 
@@ -218,6 +232,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  max-width: 60%;
 }
 
 .generalprices-wrapper .pricing .pricing-type-two .pricing-image img {
@@ -228,9 +243,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   font-size: 2.5rem;
 }
 
@@ -251,6 +270,7 @@
 }
 
 .generalprices-wrapper .pricing .pricing-type-three .pricing-image {
+  max-width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
