@@ -9,9 +9,6 @@ function App() {
       
 
       </NavBar>
-
-      
-      
    
     </div>
   );

@@ -13,6 +13,20 @@ import React, { useState } from 'react';
 
 export default function NavBar({}) {
     const [isToggled, setIsToggled] = useState(false);
+    const setTheme = color => {
+        localStorage.setItem('theme', color);
+        document.documentElement.className = color;
+    }
+    const handleClick = () => {
+        if(localStorage.getItem('theme') === 'blue-theme') {
+            setTheme('green-theme');
+        }else {
+            setTheme('blue-theme');
+        }
+    }
+    
+    
+    
     return (
         <Router>
             <nav className="nav-bar">
@@ -21,7 +35,7 @@ export default function NavBar({}) {
                         <h2><Link className="Home-link" to="/">Alanna</Link></h2>
                     </div>
                     <ul className="navigation-links">
-                        <li><ThemeChanger rounded={true} isToggled={isToggled} onToggle={() => {
+                        <li><ThemeChanger onClick={handleClick()} rounded={true} isToggled={isToggled} onToggle={() => {
                                 setIsToggled(!isToggled);
                                 console.log(isToggled);
                             }}/>

@@ -21,6 +21,20 @@ $blue-font-color: #f8be40;
 $blue-font-background: #6090cf;
 $blue-lineargradient: linear-gradient(285deg, #1652a0, #1652a0);
 
+.green-theme {
+  $home-introduction-background: #012e25;
+  $NavBar-background: #0b2e2d;
+  $font-color: #93d5ec;
+  $font-background: #001f19;
+  $lineargradient: linear-gradient(75deg, #000b09, #031b1a);
+}
+.blue-theme {
+  $home-introduction-background: #3476cc;
+  $NavBar-background: #6e98ce;
+  $font-color: #f8be40;
+  $font-background: #6090cf;
+  $lineargradient: linear-gradient(285deg, #1652a0, #1652a0);
+}
 //fonts
 @font-face {
   font-family: Varela;
