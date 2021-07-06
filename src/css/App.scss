@@ -3,8 +3,8 @@
 @import "./Mixins";
 @import "./NavBar";
 @import "./Home";
-@import "./About";
 @import "./GeneralPrices";
+@import "./ThemeChanger";
 
 * {
   margin: 0;
@@ -12,10 +12,10 @@
   box-sizing: border-box;
   font-family: Varela;
   scroll-behavior: smooth;
-  color: $font-color;
+  color: $blue-font-color;
 }
 body {
-  background-image: $lineargradientgreen;
+  background-image: $blue-lineargradient;
 }
 html {
   font-size: 62.5%;

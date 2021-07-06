@@ -8,13 +8,18 @@ $primary-blue: #a4b8d2;
 $secondary-blue: #d7c294; //keep in mind that this secondary blue is cream/beige
 
 //green shades
-$NavBar-background: #0b2e2d;
-$font-color: #93d5ec;
-$font-background: #001f19;
-$lineargradientgreen: linear-gradient(75deg, #000b09, #031b1a);
+$green-NavBar-background: #0b2e2d;
+$green-font-color: #93d5ec;
+$green-font-background: #001f19;
+$green-lineargradient: linear-gradient(75deg, #000b09, #031b1a);
 
 //blue shades
-$lineargradientblue: linear-gradient(285deg, #a4b8d2, #d7c284);
+
+$blue-NavBar-background: #6e98ce;
+$blue-home-introduction-background: #3476cc;
+$blue-font-color: #f8be40;
+$blue-font-background: #6090cf;
+$blue-lineargradient: linear-gradient(285deg, #1652a0, #1652a0);
 
 //fonts
 @font-face {
