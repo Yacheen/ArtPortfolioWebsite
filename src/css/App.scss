@@ -1,6 +1,5 @@
 @import "./Variables";
 @import "./Animations";
-@import "./Mixins";
 @import "./NavBar";
 @import "./Home";
 @import "./GeneralPrices";
@@ -13,6 +12,7 @@
   font-family: Varela;
   scroll-behavior: smooth;
   color: $font-color;
+  transition: all ease 0.2s;
 }
 body {
   background-image: $lineargradient;

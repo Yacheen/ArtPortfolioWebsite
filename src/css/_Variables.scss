@@ -14,13 +14,24 @@ $green-font-background: #001f19;
 $green-lineargradient: linear-gradient(75deg, #000b09, #031b1a);
 
 //blue shades
-
 $blue-NavBar-background: #6e98ce;
 $blue-home-introduction-background: #3476cc;
 $blue-font-color: #f8be40;
 $blue-font-background: #6090cf;
 $blue-lineargradient: linear-gradient(285deg, #1652a0, #1652a0);
 
+//DEFAULT, website starts as this green, then you can toggle blue theme
+//to turn into blue. There is no point in having the .green-theme class,
+//but honestly I am too lazy to remove it and have more important things
+//to focus on.
+$home-introduction-background: #012e25;
+$NavBar-background: #0b2e2d;
+$font-color: #93d5ec;
+$font-background: #001f19;
+$lineargradient: linear-gradient(75deg, #000b09, #031b1a);
+
+//THEME CHANGERS
+//GREEN THEME
 .green-theme {
   $home-introduction-background: #012e25;
   $NavBar-background: #0b2e2d;
@@ -28,13 +39,50 @@ $blue-lineargradient: linear-gradient(285deg, #1652a0, #1652a0);
   $font-background: #001f19;
   $lineargradient: linear-gradient(75deg, #000b09, #031b1a);
 }
+//BLUE THEME
 .blue-theme {
   $home-introduction-background: #3476cc;
   $NavBar-background: #6e98ce;
   $font-color: #f8be40;
   $font-background: #6090cf;
   $lineargradient: linear-gradient(285deg, #1652a0, #1652a0);
+  $hover: #79a7e4;
+
+  body {
+    background-image: $lineargradient;
+  }
+  * {
+    color: $font-color;
+  }
+
+  .nav-bar {
+    background: $NavBar-background;
+    .nav-bar-content .Home-button .Home-link {
+      color: $font-color;
+      &:hover {
+      }
+    }
+
+    .nav-bar-content .navigation-links li .navigation-link {
+      &:hover {
+      }
+      color: $font-color;
+    }
+  }
+  .footer {
+    background: $NavBar-background;
+  }
+
+  .portfolio-wrapper {
+    .portfolio-introduction {
+      background: $home-introduction-background;
+    }
+  }
+  .generalprices-wrapper {
+    background: $font-background;
+  }
 }
+
 //fonts
 @font-face {
   font-family: Varela;

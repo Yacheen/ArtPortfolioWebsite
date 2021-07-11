@@ -2,6 +2,7 @@
 
 .nav-bar {
   background: $NavBar-background;
+
   .nav-bar-content {
     position: relative;
     overflow: hidden;
@@ -9,16 +10,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
     .Home-button {
       display: flex;
       align-items: center;
 
       .Home-link {
-        transition: all ease 0.3s;
         &:hover {
-          background: #113635;
+          text-decoration: underline;
         }
         color: $font-color;
         padding: 2rem;
@@ -33,16 +33,53 @@
       align-items: center;
 
       li {
+        p {
+          font-size: 1.4rem;
+          display: flex;
+          padding-left: 0.5rem;
+        }
         .navigation-link {
           transition: all ease 0.3s;
           &:hover {
-            background: #113635;
+            text-decoration: underline;
           }
           color: $font-color;
           padding: 2rem;
           text-decoration: none;
           font-size: $font2;
           font-family: Varela;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background: $NavBar-background;
+  margin-top: 10rem;
+  .footer-content {
+    min-height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    .footer-copyright-text {
+      p {
+        font-size: $font3;
+      }
+    }
+    .footer-links {
+      .footer-link {
+        display: flex;
+
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+        p {
+          padding: 1rem;
+          font-size: $font2;
         }
       }
     }
