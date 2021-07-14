@@ -1,12 +1,11 @@
 @import "./Variables";
-
+@import "./NavigationTabs";
 .nav-bar {
   background: $NavBar-background;
 
   .nav-bar-content {
     position: relative;
     overflow: hidden;
-    padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
