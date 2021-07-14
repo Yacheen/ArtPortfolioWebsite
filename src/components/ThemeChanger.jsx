@@ -1,3 +1,4 @@
+/*
 import React from 'react'
 import cx from 'classnames';
 
@@ -14,3 +15,4 @@ export default function ThemeChanger({rounded = false, isToggled, onToggle}) {
 
     )
 }
+*/

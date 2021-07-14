@@ -8,10 +8,14 @@ import {
 import Contact from './Contact';
 import GeneralPrices from './GeneralPrices';
 import Home from './Home';
-import ThemeChanger from './ThemeChanger';
+//import ThemeChanger from './ThemeChanger';
 import React, { useState } from 'react';
+import NavigationTabs from './NavigationTabs'
+
+
 
 export default function NavBar({}) {
+    /*
     const [isToggled, setIsToggled] = useState(false);
     const setTheme = color => {
         localStorage.setItem('theme', color);
@@ -24,6 +28,9 @@ export default function NavBar({}) {
             setTheme('blue-theme');
         }
     }
+    */
+
+    
     
     return (
     
@@ -34,14 +41,16 @@ export default function NavBar({}) {
                         <h2><Link className="Home-link" to="/">Alanna</Link></h2>
                     </div>
                     <ul className="navigation-links">
+                        
+                        {/*
                         <li><p>Theme</p>
                             <ThemeChanger onClick={handleClick()} rounded={true} isToggled={isToggled} onToggle={() => {
                                 setIsToggled(!isToggled);
                                 console.log(isToggled);
                             }}/>
                         </li>
-                        <li><Link className="navigation-link" to="/General-Prices">Prices</Link></li>
-                        <li><Link className="navigation-link" to="/Contact">Contact</Link></li>
+                        */}
+                        <NavigationTabs />
                     </ul>
                 </div>
             </nav>
