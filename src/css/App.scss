@@ -11,10 +11,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Varela;
+  font-family: "Robot", sans-serif;
   scroll-behavior: smooth;
   color: $font-color;
-  transition: all ease 0.2s;
 }
 body {
   background-image: $lineargradient;

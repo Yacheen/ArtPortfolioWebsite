@@ -78,6 +78,8 @@
 
 .nav-bar {
   background: #0b2e2d;
+  -webkit-filter: drop-shadow(0 0 0.4rem black);
+          filter: drop-shadow(0 0 0.4rem black);
 }
 
 .nav-bar .nav-bar-content {
@@ -92,8 +94,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 80%;
-  margin: 0 auto;
+  max-width: 90%;
+  margin: 0 auto 0 0;
 }
 
 .nav-bar .nav-bar-content .Home-button {
@@ -149,9 +151,17 @@
   text-decoration: underline;
 }
 
+.website-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer {
   background: #0b2e2d;
   margin-top: 10rem;
+  -webkit-filter: drop-shadow(0 0 0.2rem black);
+          filter: drop-shadow(0 0 0.2rem black);
 }
 
 .footer .footer-content {
@@ -191,7 +201,7 @@
 
 .portfolio-wrapper {
   max-width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 .portfolio-wrapper .portfolio-introduction {
@@ -205,9 +215,10 @@
       -ms-flex-align: center;
           align-items: center;
   min-height: 40vh;
-  background: #012e25;
+  background: #001f19;
   padding: 5rem;
   margin: 8rem 0;
+  border-radius: 2%;
 }
 
 .portfolio-wrapper .portfolio-introduction .portfolio-introduction-text-box {
@@ -237,34 +248,32 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 50%;
 }
 
 .portfolio-wrapper .portfolio-introduction .portfolio-introduction-image img {
   -webkit-filter: drop-shadow(0 0 0.5rem black);
           filter: drop-shadow(0 0 0.5rem black);
-  border-radius: 5px;
-  max-width: 70%;
+  width: 50%;
+  border-radius: 2%;
 }
 
 .portfolio-wrapper .portfolio-gallery {
-  min-height: 150vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(20rem, 1fr))[3];
-      grid-template-columns: repeat(3, minmax(20rem, 1fr));
-  row-gap: 20rem;
-  -webkit-column-gap: 10rem;
-          column-gap: 10rem;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: (5vw)[9];
+      grid-template-rows: repeat(9, 5vw);
+  grid-gap: 100px;
 }
 
 .portfolio-wrapper .portfolio-gallery .portfolio-img-container img {
-  -webkit-filter: drop-shadow(0 0 0.5rem black);
-          filter: drop-shadow(0 0 0.5rem black);
   border-radius: 5px;
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .portfolio-wrapper .portfolio-gallery .portfolio-img-container .image-description {
@@ -277,7 +286,110 @@
 }
 
 .portfolio-wrapper .portfolio-gallery .portfolio-img-container .image-description p {
+  padding-top: 1rem;
   font-size: 1.5625rem;
+}
+
+.portfolio-wrapper .portfolio-gallery .image1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.portfolio-wrapper .portfolio-gallery .image1 .text-one {
+  padding-left: 3.4rem;
+}
+
+.portfolio-wrapper .portfolio-gallery .image1 .text-two {
+  padding-right: 3.4rem;
+}
+
+.portfolio-wrapper .portfolio-gallery .image2 {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.portfolio-wrapper .portfolio-gallery .image2 .text-one {
+  padding-left: 1rem;
+}
+
+.portfolio-wrapper .portfolio-gallery .image2 .text-two {
+  padding-right: 1rem;
+}
+
+.portfolio-wrapper .portfolio-gallery .image3 {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 9;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.portfolio-wrapper .portfolio-gallery .image3 .text-one {
+  padding-left: 4.5rem;
+}
+
+.portfolio-wrapper .portfolio-gallery .image3 .text-two {
+  padding-right: 4.5rem;
+}
+
+.portfolio-wrapper .portfolio-gallery .image4 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 6;
+}
+
+.portfolio-wrapper .portfolio-gallery .image4 .text-one {
+  padding-left: 12.6rem;
+}
+
+.portfolio-wrapper .portfolio-gallery .image4 .text-two {
+  padding-right: 12.6rem;
+}
+
+.portfolio-wrapper .portfolio-gallery .image5 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+.portfolio-wrapper .portfolio-gallery .image5 .text-one {
+  padding-left: 11rem;
+}
+
+.portfolio-wrapper .portfolio-gallery .image5 .text-two {
+  padding-right: 11rem;
+}
+
+.portfolio-wrapper .portfolio-gallery .image6 {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 9;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 9;
+}
+
+.portfolio-wrapper .portfolio-gallery .image6 .text-one {
+  padding-left: 15rem;
+}
+
+.portfolio-wrapper .portfolio-gallery .image6 .text-two {
+  padding-right: 15rem;
 }
 
 .generalprices-wrapper {
@@ -396,10 +508,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  text-align: right;
   font-size: 2.5rem;
+  width: 125rem;
 }
 
 .generalprices-wrapper .pricing .pricing-type-three {
@@ -446,11 +557,9 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Varela;
+  font-family: "Robot", sans-serif;
   scroll-behavior: smooth;
   color: #93d5ec;
-  -webkit-transition: all ease 0.2s;
-  transition: all ease 0.2s;
 }
 
 body {

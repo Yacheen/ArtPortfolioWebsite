@@ -56,8 +56,9 @@
       .pricing-text {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        text-align: right;
         font-size: $font2;
+        width: 125rem;
       }
     }
     .pricing-type-three {

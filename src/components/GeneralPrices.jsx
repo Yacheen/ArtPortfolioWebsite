@@ -31,7 +31,7 @@ export default function GeneralPrices() {
                         <p>Sketch: $25</p>
                         <p>Line art: $30</p>
                         <p>Flat colour: $40</p>
-                        <p>Full colour/Shaded/Optional background: $50</p>
+                        <p styles="white-space: nowrap;">Full colour/Shaded/Optional background: $50</p>
                     </div>
                     <div className="pricing-image">
                         <img src={jotaro} alt="jotaro"/>

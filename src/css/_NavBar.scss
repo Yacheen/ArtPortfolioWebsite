@@ -2,6 +2,7 @@
 @import "./NavigationTabs";
 .nav-bar {
   background: $NavBar-background;
+  filter: drop-shadow(0 0 0.4rem black);
 
   .nav-bar-content {
     position: relative;
@@ -9,8 +10,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 80%;
-    margin: 0 auto;
+    max-width: 90%;
+    margin: 0 auto 0 0;
     .Home-button {
       display: flex;
       align-items: center;
@@ -52,10 +53,16 @@
     }
   }
 }
+.website-body {
+  display: flex;
+  .side-bar {
+  }
+}
 
 .footer {
   background: $NavBar-background;
   margin-top: 10rem;
+  filter: drop-shadow(0 0 0.2rem black);
   .footer-content {
     min-height: 15vh;
     display: flex;
